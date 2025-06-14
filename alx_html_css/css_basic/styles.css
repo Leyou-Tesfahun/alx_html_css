@@ -1,38 +1,72 @@
-/* Make <body> a flex container with column direction */
+
+/* Overall body layout */
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-/* Make <main> a flex container with row direction */
+/* Layout inside <main> */
 main {
     display: flex;
     flex-direction: row;
-    flex: auto; /* automatic height and width */
-    min-height: 0; /* ensures children can scroll properly */
+    flex: auto;
+    min-height: 0;
 }
 
-/* Article takes 2/3 of width */
+/* Main content area */
 article {
     flex: 2;
-    overflow-y: auto; /* vertical scroll if needed */
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #f0f8ff;
+    color: #004d40;
+    border-right: 2px solid #ccc;
 }
 
-/* Aside takes 1/3 of width */
+/* Sidebar */
 aside {
     flex: 1;
-    overflow-y: auto; /* vertical scroll if needed */
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #fff3e0;
+    color: #5d4037;
 }
 
-/* Optional: Add some spacing for clarity */
-header, footer {
-    padding: 1rem;
-    background-color: #ccc;
+/* Header styling */
+header {
+    background-color: #263238;
+    color: white;
+    padding: 10px 20px;
 }
 
-article, aside {
-    padding: 1rem;
-    border: 1px solid #ddd;
+/* Header nav list */
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Each item in the header */
+header ul li {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+/* Logo class (Unicode icon in first list item) */
+.logo {
+    font-size: 1.8em;
+    color: #ffca28;
+}
+
+/* Footer */
+footer {
+    background-color: #263238;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
 }
