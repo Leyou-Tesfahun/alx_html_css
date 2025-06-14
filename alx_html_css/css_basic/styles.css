@@ -1,0 +1,38 @@
+/* Make <body> a flex container with column direction */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+/* Make <main> a flex container with row direction */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* automatic height and width */
+    min-height: 0; /* ensures children can scroll properly */
+}
+
+/* Article takes 2/3 of width */
+article {
+    flex: 2;
+    overflow-y: auto; /* vertical scroll if needed */
+}
+
+/* Aside takes 1/3 of width */
+aside {
+    flex: 1;
+    overflow-y: auto; /* vertical scroll if needed */
+}
+
+/* Optional: Add some spacing for clarity */
+header, footer {
+    padding: 1rem;
+    background-color: #ccc;
+}
+
+article, aside {
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
