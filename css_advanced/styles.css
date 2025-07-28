@@ -1,72 +1,142 @@
-/* ===== Testimonial/Quote Section Styles ===== */
-.testimonial {
-  background-color: var(--pink-color);
-  color: var(--white);
-  padding: 100px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 80px;
+/* ===== Videos/Tutorials Section Styles ===== */
+.tutorials {
+  background-color: var(--white);
+  padding: 80px 20px;
+  text-align: center;
 }
 
-.testimonial-image {
-  width: 150px;
+.tutorials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tutorial-card {
+  background: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.tutorial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.video-thumbnail {
+  position: relative;
+  width: 100%;
   height: 150px;
-  border-radius: 50%;
   overflow: hidden;
 }
 
-.testimonial-image img {
+.video-thumbnail img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-.testimonial-content {
-  max-width: 600px;
+.tutorial-card:hover .video-thumbnail img {
+  transform: scale(1.05);
 }
 
-.testimonial blockquote {
-  font-size: 22px;
-  font-weight: 300;
-  line-height: 1.5;
-  margin-bottom: 30px;
-  position: relative;
-}
-
-.testimonial blockquote::before {
-  content: '"';
-  font-size: 60px;
+.play-button {
   position: absolute;
-  left: -40px;
-  top: -20px;
-  opacity: 0.2;
-}
-
-.testimonial h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 5px;
-}
-
-.testimonial p {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
   font-size: 18px;
-  font-weight: 400;
-  font-style: italic;
-  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.tutorial-card:hover .play-button {
+  background-color: var(--pink-color);
+  width: 60px;
+  height: 60px;
+  font-size: 22px;
+}
+
+.tutorial-card-content {
+  padding: 20px;
+}
+
+.tutorial-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--dark-color);
+}
+
+.tutorial-description {
+  font-size: 14px;
+  color: var(--gray);
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.tutor-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.tutor-info img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.tutor-info h4 {
+  font-size: 14px;
+  color: var(--dark-color);
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stars {
+  color: var(--pink-color);
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.duration {
+  font-size: 12px;
+  color: var(--gray);
+  font-weight: 600;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .testimonial {
-    flex-direction: column;
-    text-align: center;
-    gap: 40px;
+  .tutorials-grid {
+    grid-template-columns: repeat(2, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .tutorials-grid {
+    grid-template-columns: 1fr;
   }
   
-  .testimonial blockquote::before {
-    left: 0;
-    right: 0;
-    top: -40px;
+  .video-thumbnail {
+    height: 200px;
   }
 }
