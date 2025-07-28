@@ -49,4 +49,4 @@ If the fonts don't display properly:
 - Replace placeholder images with actual project images
 - The design should be pixel-perfect according to the Figma specifications
 
-## Project Structure
+
