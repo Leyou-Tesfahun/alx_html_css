@@ -3,78 +3,273 @@
 /* Membership Section */
 /* FAQ Section */
 /* Footer Section */
-footer {
-    background-color: #071629;
-    color: white;
-    padding: 60px 0 40px;
-    text-align: center;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmileSchool - Learn to Smile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="SmileSchool Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="container">
+            <h1>Learn to smile with confidence</h1>
+            <p>Master the art of smiling with our professional courses from the best coaches in the industry</p>
+            <a href="#" class="btn">Get started</a>
+        </div>
+    </section>
 
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    <!-- Quotes Section -->
+    <section class="quotes">
+        <div class="container">
+            <div class="quote-text">
+                <p>"The most valuable smile training I've ever received. Completely transformed my confidence."</p>
+            </div>
+            <div class="quote-author">
+                <img src="images/author1.jpg" alt="Phillip Massey">
+                <div>
+                    <p class="author-name">Phillip Massey</p>
+                    <p class="author-title">Professional Smile Coach</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-.footer-logo {
-    margin-bottom: 30px;
-}
+    <!-- Videos Section -->
+    <section class="videos">
+        <div class="container">
+            <h2 class="section-title">Most popular tutorials</h2>
+            <div class="videos-list">
+                <!-- Video 1 -->
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <img src="images/video1.jpg" alt="Diagonal Smile">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Diagonal Smile</h3>
+                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit.</p>
+                        <div class="video-author">
+                            <img src="images/author1.jpg" alt="Phillip Massey">
+                            <p>Phillip Massey</p>
+                        </div>
+                        <div class="video-rating">
+                            <img src="images/star.png" alt="Rating">
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video 2 -->
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <img src="images/video2.jpg" alt="Sad Smile">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Sad Smile</h3>
+                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit.</p>
+                        <div class="video-author">
+                            <img src="images/author1.jpg" alt="Phillip Massey">
+                            <p>Phillip Massey</p>
+                        </div>
+                        <div class="video-rating">
+                            <img src="images/star.png" alt="Rating">
+                            <span>4.5</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video 3 -->
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <img src="images/video3.jpg" alt="Natural Smile">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Natural Smile</h3>
+                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit.</p>
+                        <div class="video-author">
+                            <img src="images/author1.jpg" alt="Phillip Massey">
+                            <p>Phillip Massey</p>
+                        </div>
+                        <div class="video-rating">
+                            <img src="images/star.png" alt="Rating">
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video 4 -->
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <img src="images/video4.jpg" alt="Happy Smile">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Happy Smile</h3>
+                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit.</p>
+                        <div class="video-author">
+                            <img src="images/author1.jpg" alt="Phillip Massey">
+                            <p>Phillip Massey</p>
+                        </div>
+                        <div class="video-rating">
+                            <img src="images/star.png" alt="Rating">
+                            <span>5.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-.footer-logo img {
-    height: 30px;
-}
+    <!-- Membership Section -->
+    <section class="membership">
+        <div class="container">
+            <h2>Membership</h2>
+            <p>Choose the plan that fits your smile goals</p>
+            <div class="membership-cards">
+                <!-- Membership 1 -->
+                <div class="membership-card">
+                    <img src="images/membership1.png" alt="Basic Membership">
+                    <h3>Basic</h3>
+                    <p>Perfect for beginners</p>
+                    <div class="pricing">$9.99/month</div>
+                </div>
+                
+                <!-- Membership 2 -->
+                <div class="membership-card">
+                    <img src="images/membership2.png" alt="Pro Membership">
+                    <h3>Pro</h3>
+                    <p>For serious smile learners</p>
+                    <div class="pricing">$19.99/month</div>
+                </div>
+                
+                <!-- Membership 3 -->
+                <div class="membership-card">
+                    <img src="images/membership3.png" alt="Premium Membership">
+                    <h3>Premium</h3>
+                    <p>All features included</p>
+                    <div class="pricing">$29.99/month</div>
+                </div>
+                
+                <!-- Membership 4 -->
+                <div class="membership-card">
+                    <img src="images/membership4.png" alt="Coaching Membership">
+                    <h3>Coaching</h3>
+                    <p>Personalized 1-on-1 sessions</p>
+                    <div class="pricing">$99.99/month</div>
+                </div>
+            </div>
+            <button class="membership-btn">Join Now</button>
+        </div>
+    </section>
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    margin-bottom: 40px;
-}
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-items">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is SmileSchool?</h3>
+                        <div class="toggle-icon"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>SmileSchool is a premier online education platform dedicated to teaching the art and science of smiling. We offer courses designed by world-class smile coaches to help you master different types of smiles for various situations.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How does it work?</h3>
+                        <div class="toggle-icon"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>After signing up, you'll get access to our video tutorials, practice exercises, and community forums. Our courses are self-paced, with new lessons released weekly. Premium members get personalized feedback from our coaches.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do I need any special equipment?</h3>
+                        <div class="toggle-icon"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>All you need is a device with internet access and a mirror for practice. Some advanced courses recommend a smartphone for recording your smile practice sessions.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I cancel my membership?</h3>
+                        <div class="toggle-icon"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can cancel anytime through your account settings. Your access will continue until the end of your current billing period.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-.social-links a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: white;
-    font-size: 1.2rem;
-    transition: all 0.3s ease;
-}
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo-white.png" alt="SmileSchool">
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p class="copyright">© SmileSchool 2020</p>
+            </div>
+        </div>
+    </footer>
 
-.social-links a:hover {
-    background-color: #C271FF;
-    transform: translateY(-3px);
-}
-
-.copyright {
-    font-size: 0.9rem;
-    opacity: 0.7;
-    margin-top: 20px;
-}
-
-/* Responsive Design for Footer */
-@media (max-width: 768px) {
-    footer {
-        padding: 50px 0 30px;
-    }
-    
-    .social-links {
-        gap: 15px;
-        margin-bottom: 30px;
-    }
-    
-    .social-links a {
-        width: 36px;
-        height: 36px;
-        font-size: 1rem;
-    }
-}
+    <!-- JavaScript for FAQ toggle functionality -->
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
