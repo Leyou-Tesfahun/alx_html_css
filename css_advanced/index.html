@@ -3,62 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn to smile with the best smile educators">
-    <title>Smileschool - Learn to Smile</title>
+    <meta name="description" content="Learn to smile with the best smile educators at Smileschool">
+    <title>Smileschool - Learn to Smile with Professional Coaches</title>
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Smileschool - Learn to Smile">
+    <meta property="og:description" content="Learn to smile with the best smile educators">
+    <meta property="og:image" content="/images/logo.png">
+    <meta property="og:url" content="https://smileschool.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Preconnect to external resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/4a2b055604.js" crossorigin="anonymous"></script>
+    
+    <!-- Font Awesome with better loading strategy -->
+    <script src="https://kit.fontawesome.com/4a2b055604.js" crossorigin="anonymous" defer></script>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <a href="#" class="logo">
-                <img src="images/logo.png" alt="Smileschool logo" width="160" height="40">
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <a href="#" class="logo" aria-label="Smileschool home">
+                <img src="./images/logo.png" alt="Smileschool logo" width="160" height="40" loading="eager">
             </a>
           
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#">COURSE</a></li>
-                <li class="nav-item"><a href="#">PRICING</a></li>
-                <li class="nav-item"><a href="#">LOGIN</a></li>
+            <ul class="nav-menu" role="list">
+                <li class="nav-item" role="listitem"><a href="#" aria-current="page">COURSE</a></li>
+                <li class="nav-item" role="listitem"><a href="#">PRICING</a></li>
+                <li class="nav-item" role="listitem"><a href="#">LOGIN</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="main-content" role="main">
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero" aria-labelledby="hero-heading">
             <div class="hero-content">
-                <h1 class="hero-title">Get schooled</h1>
+                <h1 class="hero-title" id="hero-heading">Get schooled</h1>
                 <div class="hero-tags">
                     <span>SMILES</span>
                     <span>GRIN</span>
                     <span>LAUGH</span>
                 </div>
-                <button class="btn-primary">REGISTER FOR FREE</button>
+                <button class="btn-primary" aria-label="Register for free">REGISTER FOR FREE</button>
             </div>
             
-            <div class="pros-section">
-                <h2 class="section-title">Learn from the pros</h2>
-                <div class="pros-grid">
-                    <div class="pro-card">
-                        <img src="./images/1 (3).png" alt="Phillip Massey" width="150" height="150">
+            <div class="pros-section" aria-labelledby="pros-heading">
+                <h2 class="section-title" id="pros-heading">Learn from the pros</h2>
+                <div class="pros-grid" role="list">
+                    <div class="pro-card" role="listitem">
+                        <img src="./images/1 (3).png" alt="Phillip Massey smiling" width="150" height="150" loading="lazy">
                         <h3>Phillip Massey</h3>
                         <p>« Smile of the year » 2018 - 2019</p>
                     </div>
-                    <div class="pro-card">
-                        <img src="./images/6.png" alt="Nannie Lawrence" width="150" height="150">
+                    <div class="pro-card" role="listitem">
+                        <img src="./images/6.png" alt="Nannie Lawrence smiling" width="150" height="150" loading="lazy">
                         <h3>Nannie Lawrence</h3>
                         <p>Best « little smile » 2017</p>
                     </div>
-                    <div class="pro-card">
-                        <img src="./images/7.png" alt="Bruce Walters" width="150" height="150">
+                    <div class="pro-card" role="listitem">
+                        <img src="./images/7.png" alt="Bruce Walters smiling" width="150" height="150" loading="lazy">
                         <h3>Bruce Walters</h3>
                         <p>Best « Friend Smile » live performance 2019</p>
                     </div>
-                    <div class="pro-card">
-                        <img src="./images/8.png" alt="Henry Hughes" width="150" height="150">
+                    <div class="pro-card" role="listitem">
+                        <img src="./images/8.png" alt="Henry Hughes smiling" width="150" height="150" loading="lazy">
                         <h3>Henry Hughes</h3>
                         <p>« 24h smiles » winner 2016 - 2019</p>
                     </div>
@@ -67,84 +83,86 @@
         </section>
 
         <!-- Testimonial Section -->
-        <section class="testimonial">
+        <figure class="testimonial" aria-labelledby="testimonial-quote">
             <div class="testimonial-image">
-                <img src="./images/Bitmap.png" alt="Testimonial person" width="300" height="300">
+                <img src="./images/Bitmap.png" alt="Person Name smiling" width="300" height="300" loading="lazy">
             </div>
-            <div class="testimonial-content">
-                <blockquote>« Those tutorials are concise and go straight to the point. I can’t think of a better place to learn smiling. And it’s so fun!</blockquote>
+            <figcaption class="testimonial-content">
+                <blockquote id="testimonial-quote" lang="en">
+                    « Those tutorials are concise and go straight to the point. I can't think of a better place to learn smiling. And it's so fun!
+                </blockquote>
                 <h3>Person Name</h3>
                 <p>weather presenter</p>
-            </div>
-        </section>
+            </figcaption>
+        </figure>
 
         <!-- Tutorials Section -->
-        <section class="tutorials">
-            <h2 class="section-title">Most popular tutorials</h2>
-            <div class="tutorials-grid">
-                <div class="tutorial-card">
+        <section class="tutorials" aria-labelledby="tutorials-heading">
+            <h2 class="section-title" id="tutorials-heading">Most popular tutorials</h2>
+            <div class="tutorials-grid" role="list">
+                <article class="tutorial-card" role="listitem">
                     <div class="video-thumbnail">
-                        <img src="./images/Bitmap (1).png" alt="Diagonal Smile tutorial" width="300" height="200">
-                        <div class="play-button"><i class="fas fa-play"></i></div>
+                        <img src="./images/Bitmap (1).png" alt="Diagonal Smile tutorial thumbnail" width="300" height="200" loading="lazy">
+                        <div class="play-button" aria-hidden="true"><i class="fas fa-play"></i></div>
                     </div>
                     <h3>Diagonal Smile</h3>
                     <p class="tutorial-description">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
                     <div class="tutor-info">
-                        <img src="./images/1 (3).png" alt="Phillip Massey" width="30" height="30">
+                        <img src="./images/1 (3).png" alt="Phillip Massey" width="30" height="30" loading="lazy">
                         <h4>Phillip Massey</h4>
                     </div>
                     <div class="rating">
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                        <div class="stars" aria-label="Rating: 5 out of 5 stars">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
                         </div>
                         <span class="duration">8 min</span>
                     </div>
-                </div>
+                </article>
                 
                 <!-- Repeat for other tutorial cards -->
-                <div class="tutorial-card">
+                <article class="tutorial-card" role="listitem">
                     <!-- Content same as above -->
-                </div>
+                </article>
                 
-                <div class="tutorial-card">
+                <article class="tutorial-card" role="listitem">
                     <!-- Content same as above -->
-                </div>
+                </article>
                 
-                <div class="tutorial-card">
+                <article class="tutorial-card" role="listitem">
                     <!-- Content same as above -->
-                </div>
+                </article>
             </div>
         </section>
 
         <!-- Membership Section -->
-        <section class="membership">
-            <h2 class="section-title">Free membership</h2>
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <img src="./images/smile.svg" alt="Smile icon" width="50" height="50">
+        <section class="membership" aria-labelledby="membership-heading">
+            <h2 class="section-title" id="membership-heading">Free membership</h2>
+            <div class="benefits-grid" role="list">
+                <div class="benefit-card" role="listitem">
+                    <img src="./images/smile.svg" alt="" role="presentation" width="50" height="50" loading="lazy">
                     <h3>Lorem Ipsum</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
                 <!-- Repeat for other benefit cards -->
             </div>
-            <button class="btn-primary">REGISTER FOR FREE</button>
+            <button class="btn-primary" aria-label="Register for free membership">REGISTER FOR FREE</button>
         </section>
 
         <!-- FAQ Section -->
-        <section class="faq">
-            <h2 class="section-title">F.A.Q</h2>
+        <section class="faq" aria-labelledby="faq-heading">
+            <h2 class="section-title" id="faq-heading">F.A.Q</h2>
             <div class="faq-grid">
                 <div class="faq-column">
-                    <div class="faq-item">
-                        <h3>How does this work?</h3>
-                        <div class="faq-answer">
+                    <article class="faq-item">
+                        <h3><button aria-expanded="false" aria-controls="faq1">How does this work?</button></h3>
+                        <div id="faq1" class="faq-answer" hidden>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
-                    </div>
+                    </article>
                     <!-- Other FAQ items -->
                 </div>
                 <div class="faq-column">
@@ -154,18 +172,32 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="footer-content">
             <div class="footer-logo-social">
-                <img src="images/logo.png" alt="Smileschool logo" width="160" height="40">
+                <img src="./images/logo.png" alt="Smileschool logo" width="160" height="40" loading="lazy">
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-            <p class="copyright">©smileschool 2020</p>
+            <p class="copyright">©smileschool <span id="current-year">2020</span></p>
         </div>
     </footer>
+
+    <script>
+        // Simple script to update copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-item button').forEach(button => {
+            button.addEventListener('click', () => {
+                const expanded = button.getAttribute('aria-expanded') === 'true';
+                button.setAttribute('aria-expanded', !expanded);
+                button.nextElementSibling.hidden = expanded;
+            });
+        });
+    </script>
 </body>
 </html>
