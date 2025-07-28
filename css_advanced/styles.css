@@ -1,163 +1,72 @@
-/* styles.css */
-/* ===== Base Styles ===== */
-:root {
-  --dark-color: #071629;
-  --pink-color: #C271FF;
-  --light-pink: #D279FF;
-  --white: #FFFFFF;
-  --black: #000000;
-  --gray: #979797;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-  color: var(--dark-color);
-  line-height: 1.6;
-}
-
-/* ===== Header Styles ===== */
-.header {
-  background-color: var(--dark-color);
-  padding: 20px 0;
-  position: fixed;
-  width: 100%;
-  z-index: 100;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 30px;
-}
-
-.nav-menu {
-  display: flex;
-  list-style: none;
-}
-
-.nav-item {
-  margin-left: 30px;
-}
-
-.nav-item a {
-  color: var(--white);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-
-.nav-item a:hover {
-  color: var(--pink-color);
-}
-
-/* ===== Hero Banner Styles ===== */
-.hero {
-  background-color: var(--dark-color);
-  color: var(--white);
-  text-align: center;
-  padding: 180px 20px 100px;
-  background-image: url('../images/background.png');
-  background-size: cover;
-  background-position: center;
-}
-
-.hero-title {
-  font-size: 120px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: var(--pink-color);
-}
-
-.hero-tags {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin-bottom: 40px;
-}
-
-.hero-tags span {
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--white);
-}
-
-.btn-primary {
+/* ===== Testimonial/Quote Section Styles ===== */
+.testimonial {
   background-color: var(--pink-color);
   color: var(--white);
-  border: none;
-  border-radius: 22px;
-  padding: 12px 30px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.btn-primary:hover {
-  background-color: var(--light-pink);
-  transform: translateY(-2px);
-}
-
-/* ===== Pros Section Styles ===== */
-.pros-section {
-  text-align: center;
-  padding: 80px 20px;
-  background-color: var(--white);
-}
-
-.section-title {
-  font-size: 32px;
-  margin-bottom: 60px;
-  color: var(--dark-color);
-}
-
-.pros-grid {
+  padding: 100px 20px;
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 80px;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
-.pro-card {
-  width: 150px;
-}
-
-.pro-card img {
+.testimonial-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimonial-image img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  margin-bottom: 20px;
 }
 
-.pro-card h3 {
+.testimonial-content {
+  max-width: 600px;
+}
+
+.testimonial blockquote {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.testimonial blockquote::before {
+  content: '"';
+  font-size: 60px;
+  position: absolute;
+  left: -40px;
+  top: -20px;
+  opacity: 0.2;
+}
+
+.testimonial h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.testimonial p {
   font-size: 18px;
-  margin-bottom: 10px;
-  color: var(--dark-color);
+  font-weight: 400;
+  font-style: italic;
+  opacity: 0.8;
 }
 
-.pro-card p {
-  font-size: 14px;
-  color: var(--gray);
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .testimonial {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  
+  .testimonial blockquote::before {
+    left: 0;
+    right: 0;
+    top: -40px;
+  }
 }
